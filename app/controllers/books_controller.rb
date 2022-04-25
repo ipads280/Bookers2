@@ -4,6 +4,7 @@ class BooksController < ApplicationController
   
   
   def index
+    
     @books=Book.all
     @new=Book.new
     @user=current_user
